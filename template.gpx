@@ -7,7 +7,7 @@
     <time>{start_time}</time>
   </metadata>
   <trk>
-  <name>{track_name}</name>
+  <name>Location History</name>
   <trkseg>
     {track_points}
   </trkseg>

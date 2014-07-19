@@ -49,7 +49,7 @@ def main(kml_filename, gpx_filename):
     with open(full_gpx_path, 'w') as f:
         track_points = '\n'.join([p.to_gpx() for p in points])
         start_time = points[0].timestamp
-        f.write(gpx_template.format(start_time=start_time, track_name='Location History', track_points=track_points))
+        f.write(gpx_template.format(start_time=start_time, track_points=track_points))
 
 
 if __name__ == '__main__':
