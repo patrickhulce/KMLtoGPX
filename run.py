@@ -6,7 +6,7 @@ APP_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
 
 GPX_TEMPLATE_FILE = os.path.join(APP_DIRECTORY, 'template.gpx')
 
-POINT_REGEX = r'<when>(.*?)</when>\n<gx:coord>(.*?)</gx:coord>'
+POINT_REGEX = r'<when>(.*?)</when>\s*<gx:coord>(.*?)</gx:coord>'
 
 class Point:
     def __init__(self, lat, lon, elevation, timestamp):
